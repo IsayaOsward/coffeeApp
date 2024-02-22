@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 
 class CoffeeTile extends StatelessWidget {
   final Coffee coffee;
+  final Icon icon;
   void Function()? onPressed;
   CoffeeTile({
     super.key,
     required this.coffee,
-    required this.onPressed
+    required this.onPressed,
+    required this.icon,
   });
 
   @override
@@ -23,7 +25,10 @@ class CoffeeTile extends StatelessWidget {
         title: Text(coffee.name),
         subtitle: Text(coffee.price),
         leading: Image.asset(coffee.imagePath),
-        trailing: IconButton(icon: const Icon(Icons.add), onPressed: onPressed,),
+        trailing: IconButton(
+          icon: icon,
+          onPressed: onPressed,
+        ),
       ),
     );
   }
