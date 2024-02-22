@@ -12,10 +12,11 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  @override
   int selectedIndex=0;
   void navigateBottomBar(int index) {
-    selectedIndex=index;
+    setState(() {
+      selectedIndex = index;
+    });
   }
 
   final List pages=[
@@ -25,6 +26,7 @@ class _HomePageState extends State<HomePage> {
     //cart page
     CartPage()
   ];
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: backgroundColor,
@@ -33,6 +35,7 @@ class _HomePageState extends State<HomePage> {
           navigateBottomBar(index);
         },
       ),
+      body: pages[selectedIndex],
     );
   }
 }
