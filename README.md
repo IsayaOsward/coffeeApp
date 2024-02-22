@@ -4,13 +4,15 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This is a simple flutter app that integrate the basic widgets and basic idea of classes as well as
+flutter state management concept. The state management used in this app is Provider.
 
-A few resources to get you started if this is your first Flutter project:
+# Simple Description
+User can add coffee on the cart and can remove the coffee from the app.
+Upon adding and deleting the coffee from the cart the Provider is in charge of keeping
+the state of our app alive.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#Thanks for your time and don't forget to follow my pages
+#github: @IsayaOsward
+#x: @IsayaOsward
+#linkedIn: @in/isaya-osward-368175215
